@@ -36,7 +36,7 @@ section.hero {
     animation: slideUp 6s infinite ease;
   }
  /* buttons */
-  /* & .buttons {
+  & .buttons {
     display: flex;
     gap: 2rem;
     margin-top: 3rem;
@@ -56,13 +56,15 @@ section.hero {
         padding: 1.5rem;
         border-radius: 50%;
         background-color: aliceblue;
+        width: 72px;
+        height: 72px;
 
       }
     }
     & .shadow {
       box-shadow: 0 2px;
     }
-  } */
+  } 
 }
 
 
