@@ -35,8 +35,8 @@ section.hero {
     display: block;
     animation: slideUp 6s infinite ease;
   }
-
-  & .buttons {
+ /* buttons */
+  /* & .buttons {
     display: flex;
     gap: 2rem;
     margin-top: 3rem;
@@ -45,7 +45,6 @@ section.hero {
       display: flex;
       align-items: center;
       gap: .75rem;
-      background-color: gray;
       border-radius: 5rem;
 
       &.buy {
@@ -63,7 +62,7 @@ section.hero {
     & .shadow {
       box-shadow: 0 2px;
     }
-  }
+  } */
 }
 
 
