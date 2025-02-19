@@ -4,10 +4,15 @@ section.hero {
   padding: 2.5rem 2rem;
   margin-inline: auto;
 
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
 
   & h1 {
     max-width: 40rem;
   }
+
   & h1 div {
     display: inline-block;
     /* border: 2px lime solid; */
@@ -16,15 +21,16 @@ section.hero {
     width: auto;
     vertical-align: bottom;
   }
-  
+
   & h1 span:nth-child(1),
   h1 span:nth-child(4) {
     color: var(--snitap-sky-mid);
   }
+
   & h1 span:nth-child(2) {
     color: var(--snitap-joy-mid);
   }
-  
+
   & h1 span:nth-child(3) {
     color: var(--snitap-joy-leaf);
     display: block;
@@ -35,7 +41,8 @@ section.hero {
     display: block;
     animation: slideUp 6s infinite ease;
   }
- /* buttons */
+
+  /* buttons */
   & .buttons {
     display: flex;
     gap: 2rem;
@@ -60,20 +67,73 @@ section.hero {
         height: 72px;
       }
     }
+
     & .shadow {
       box-shadow: 0 2px;
     }
   }
+
+  /* patins */
+  &>div:nth-child(2) {
+    display: block;
+    width: 100%;
+    max-width: 30.5rem;
+    height: 30.5rem;
+
+    border: 2px deeppink solid;
+
+    & .content {
+      border: 2px lime solid;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    & img {
+      position: absolute;
+      width: 100%;
+    }
+
+    & img[src*="ellipse"] {
+      width: 94%;
+      top: 3%;
+      left: 3%;
+    }
+
+    & img[src*="patins"] {
+      z-index: 1;
+    }
+
+    & img[src*="stars1"] {
+      max-width: 5.5rem;
+      top: 30%;
+      z-index: 0;
+    }
+
+    & img[src*="stars2"] {
+      max-width: 2.5rem;
+      right: 0;
+      bottom: 35%;
+    }
+  }
+
 }
 
+@keyframes slideIn {
+  100% {
+    transform: translateX(0);
+  }
+}
 
 
 @keyframes slideUp {
 
   /* radical static */
-  0%, 22% {
+  0%,
+  22% {
     transform: translateY(0);
   }
+
   /* divertida in */
   23% {
     transform: translateY(calc(-5rem - 15px));
@@ -92,7 +152,8 @@ section.hero {
   }
 
   /* divertida static */
-  33%, 55% {
+  33%,
+  55% {
     transform: translateY(-5rem);
   }
 
@@ -112,11 +173,13 @@ section.hero {
   62% {
     transform: translateY(calc(-10rem + 5px));
   }
+
   /* saudável static */
-  66%, 88% {
+  66%,
+  88% {
     transform: translateY(-10rem);
   }
-  
+
   /* radical in */
   89% {
     transform: translateY(calc(-15rem - 15px));
