@@ -56,7 +56,8 @@ section.hero {
         padding: 1.5rem;
         border-radius: 50%;
         background-color: rgb(250, 250, 250);
-
+        width: 72px;
+        height: 72px;
       }
     }
     & .shadow {
