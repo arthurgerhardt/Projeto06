@@ -74,6 +74,10 @@ footer {
       &:hover::before {
         scale: 1;
       }
+
+      & img {
+        width: 1.5rem;
+      }
       
       &::before {
         content: "";
